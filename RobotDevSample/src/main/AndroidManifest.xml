@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.asus.robotdevsample">
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/RobotDevToolTheme">
+
+        <activity android:name=".RobotDevSampleActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- vision activities -->
+        <activity android:name=".VisionActivity"/>
+            <activity android:name="com.asus.robotdevsample.VisionRequestDetectPerson"/>
+
+
+        <!-- motion activities -->
+        <activity android:name=".MotionActivity"/>
+            <activity android:name="com.asus.robotdevsample.MotionMoveBodyHead"/>
+            <activity android:name="com.asus.robotdevsample.MotionRemoteControlBodyHead"/>
+
+        <!-- robot activities -->
+        <activity android:name=".RobotActivity"/>
+            <activity android:name="com.asus.robotdevsample.RobotSpeak"/>
+            <activity android:name="com.asus.robotdevsample.RobotSetExpression"/>
+
+        <!-- utility activities -->
+        <activity android:name=".UtilityActivity"/>
+            <activity android:name="com.asus.robotdevsample.UtilityPlayAction"/>
+            <activity android:name="com.asus.robotdevsample.UtilityPlayEmotionalAction"/>
+
+        <!-- wheelLithts activities -->
+        <activity android:name=".WheelLightsActivity"/>
+            <activity android:name="com.asus.robotdevsample.WheelLightsSetBrightness"/>
+            <activity android:name="com.asus.robotdevsample.WheelLightsTurnOff"/>
+            <activity android:name="com.asus.robotdevsample.WheelLightsSetColor"/>
+
+
+    </application>
+
+</manifest>

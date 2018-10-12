@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textview_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#F5DC49"
+        android:paddingTop="25dp"
+        android:paddingBottom="25dp"
+        />
+
+    <TableLayout
+        android:layout_below="@+id/textview_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:id="@+id/tableLayout2"
+        android:stretchColumns="0,1,2,3">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/robot_setExpression_candidate_select"
+                android:id="@+id/textView_input_face"
+                android:layout_column="0"
+                />
+
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_face_candidate"
+                android:layout_alignParentStart="true"
+                android:layout_column="1"
+                android:layout_span="2"/>
+
+        </TableRow>
+
+
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="30dp"/>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/robot_setExpression_api"
+                android:id="@+id/textview_setExpression_api"
+                android:layout_column="0"
+                />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/robot_setExpression_less"
+                android:id="@+id/btn_setExpression"
+                android:layout_column="1"
+                />
+
+        </TableRow>
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="30dp"/>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/robot_setGoTo_api"
+                android:id="@+id/textview_setGoTo_api"
+                android:layout_column="0"
+                />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/robot_setGoTo_less"
+                android:id="@+id/btn_setGoTo"
+                android:layout_column="1"
+                />
+
+        </TableRow>
+
+    </TableLayout>
+
+
+
+
+</RelativeLayout>

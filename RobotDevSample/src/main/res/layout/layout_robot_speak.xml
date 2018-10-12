@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textview_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#F5DC49"
+        android:paddingTop="25dp"
+        android:paddingBottom="25dp"
+        />
+
+
+    <TableLayout
+        android:layout_below="@+id/textview_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:id="@+id/tableLayout"
+        android:stretchColumns="0,1,2,3,4,5,6"
+        >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/robot_speak"
+                android:id="@+id/robot_speak"
+            />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/speak_edittext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:text="@string/robot_speak_example"
+                android:layout_below="@+id/tableLayout"
+                android:layout_alignStart="@+id/btn_speakstart"
+                android:layout_column="0"
+                android:layout_span="6"
+                />
+
+        </TableRow>
+
+
+
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="30dp"/>
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/robot_speak_api"
+                android:id="@+id/textview_robot_speak"
+                android:layout_column="0"
+                />
+
+            <Button
+                android:id="@+id/btn_speak_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/robot_speak_less"
+                android:layout_column="1"
+                />
+
+        </TableRow>
+
+
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="30dp"/>
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/robot_stopSpeak_api"
+                android:id="@+id/textview_robot_stopSpeak"
+                android:layout_column="0"
+                />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/robot_stopSpeak_less"
+                android:id="@+id/btn_speak_stop"
+                android:layout_column="1"
+                />
+
+        </TableRow>
+
+
+    </TableLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>

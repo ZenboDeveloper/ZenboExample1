@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.asus.zenbodialogsample">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/RobotDevTheme">
+
+        <meta-data android:name="zenbo_ds_domainuuid"
+            android:value="9EF85697FF064D54B32FF06D21222BA2"/>
+
+        <meta-data android:name="zenbo_ds_version_9EF85697FF064D54B32FF06D21222BA2"
+            android:value="0.0.1"/>
+
+        <activity android:name=".ZenboDialogSample">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="com.asus.intent.category.ZENBO" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

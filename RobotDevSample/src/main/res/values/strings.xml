@@ -1,0 +1,266 @@
+<resources>
+    <!-- App Name-->
+    <string name="app_name">Zenbo Dev Sample</string>
+
+
+    <!-- Toolbar resources -->
+    <string name="toolbar_title_mainclass_robotapi_title">RobotAPI</string>
+
+    <string name="toolbar_title_subclass_contacts_title">RobotAPI. contacts</string>
+    <string name="toolbar_title_subclass_motion_title">RobotAPI. motion</string>
+    <string name="toolbar_title_subclass_robot_title">RobotAPI. robot</string>
+    <string name="toolbar_title_subclass_utility_title">RobotAPI. utility</string>
+    <string name="toolbar_title_subclass_vision_title">RobotAPI. vision</string>
+    <string name="toolbar_title_subclass_wheel_title">RobotAPI. wheelLights</string>
+
+
+
+    <!-- RobotAPI listView adapter -->
+    <string-array name="subclasses_type">
+        <item>motion</item>
+        <item>robot</item>
+        <item>utility</item>
+        <item>vision</item>
+        <item>wheelLights</item>
+    </string-array>
+
+
+
+    <!-- ============================================================================ -->
+    <!-- robotapi class -->
+    <!-- ============================================================================ -->
+    <!-- RobotAPI subclass name -->
+    <string-array name="subclasses_type_mapping_activity_class">
+        <item>Motion</item>
+        <item>Robot</item>
+        <item>Utility</item>
+        <item>Vision</item>
+        <item>WheelLights</item>
+    </string-array>
+
+
+    <string name="robotapi_cancelCommand_full">RobotAPI. cancelCommand</string>
+    <string name="robotapi_cancelCommand_less">cancelCommand</string>
+    <string name="robotapi_cancelCommand_api">cancelCommand(int command)</string>
+
+
+
+
+    <!-- ============================================================================ -->
+    <!-- motion subclass -->
+    <!-- ============================================================================ -->
+    <!-- RobotAPI.motion listView adapter -->
+    <string-array name="subclasses_motion">
+        <item>@string/motion_moveBody_and_movehead</item>
+        <item>@string/motion_remoteControlBody_and_remoteControlHead</item>
+    </string-array>
+
+    <!-- RobotAPI.motion listView adapter -->
+    <string-array name="subclasses_motion_mapping_activity_class">
+        <item>MotionMoveBodyHead</item>
+        <item>MotionRemoteControlBodyHead</item>
+    </string-array>
+
+
+    <!-- string for adapter only -->
+    <string name="motion_moveBody_and_movehead">moveBody <![CDATA[&]]> moveHead</string>
+    <string name="motion_remoteControlBody_and_remoteControlHead">remoteControlBody <![CDATA[&]]> remoteControlHead</string>
+
+    
+
+    <!--RobotAPI.motion api strings-->
+    <string name="motion_moveBody_full">RobotAPI. motion. moveBody</string>
+    <string name="motion_moveBody_less">moveBody</string>
+    <string name="motion_moveBody_api">moveBody(float relativeX, float relativeY, float relativeTheta)</string>
+    <string name="motion_moveBody_level_full">RobotAPI. motion. moveBody</string>
+    <string name="motion_moveBody_level_less">moveBody</string>
+    <string name="motion_moveBody_level_api">moveBody(float relativeX, float relativeY, float relativeTheta, MotionControl.SpeedLevel.Body speedLevel)</string>
+    <string name="motion_moveHead_full">RobotAPI. motion. moveHead</string>
+    <string name="motion_moveHead_less">moveHead</string>
+    <string name="motion_moveHead_api">moveHead(float yaw, float pitch, MotionControl.SpeedLevel.Head speedLevel)</string>
+    <string name="motion_remoteControlBody_full">RobotAPI. motion. remoteControlBody</string>
+    <string name="motion_remoteControlBody_less">remoteControlBody</string>
+    <string name="motion_remoteControlBody_api">remoteControlBody( MotionControl. Direction. Body direction)</string>
+    <string name="motion_remoteControlHead_full">RobotAPI. motion. remoteControlHead</string>
+    <string name="motion_remoteControlHead_less">remoteControlHead</string>
+    <string name="motion_remoteControlHead_api">remoteControlHead( MotionControl. Direction. Head direction)</string>
+    <string name="motion_stopMoving_full">RobotAPI. motion. stopMoving</string>
+    <string name="motion_stopMoving_less">stopMoving</string>
+    <string name="motion_stopMoving_api">stopMoving()</string>
+    <string name="motion_remoteControlBody_FORWARD">FORWARD</string>
+    <string name="motion_remoteControlBody_BACKWARD">BACKWARD</string>
+    <string name="motion_remoteControlBody_TURN_LEFT">TURN_LEFT</string>
+    <string name="motion_remoteControlBody_TURN_RIGHT">TURN_RIGHT</string>
+    <string name="motion_remoteControlBody_STOP">STOP</string>
+    <string name="motion_remoteControlHead_UP">UP</string>
+    <string name="motion_remoteControlHead_LEFT">LEFT</string>
+    <string name="motion_remoteControlHead_RIGHT">RIGHT</string>
+    <string name="motion_remoteControlHead_DOWN">DOWN</string>
+    <string name="motion_remoteControlHead_STOP">STOP</string>
+
+
+
+
+
+
+
+
+
+    <!-- ============================================================================ -->
+    <!-- robot subclass -->
+    <!-- ============================================================================ -->
+    <!-- RobotAPI.robot listView adapter -->
+    <string-array name="subclasses_robot">
+        <item>@string/robot_speak_less</item>
+        <item>@string/robot_setExpression_less</item>
+    </string-array>
+
+
+    <!-- string for adapter only -->
+    <string name="robot_speak">Speak Content</string>
+
+
+    <!--RobotAPI.robot api strings-->
+    <string name="robot_speak_full">RobotAPI. robot. speak</string>
+    <string name="robot_speak_less">speak</string>
+    <string name="robot_speak_api">speak(java.lang.String sentence)</string>
+    <string name="robot_stopSpeak_full">RobotAPI. robot. stopSpeak</string>
+    <string name="robot_stopSpeak_less">stopSpeak</string>
+    <string name="robot_stopSpeak_api">stopSpeak()</string>
+    <string name="robot_setExpression_full">RobotAPI. robot. setExpression</string>
+    <string name="robot_setExpression_less">setExpression</string>
+    <string name="robot_setExpression_api">setExpression(RobotFace face)</string>
+
+    <string name="robot_setGoTo_full">RobotAPI. robot. setGoTo</string>
+    <string name="robot_setGoTo_less">setGoTo</string>
+    <string name="robot_setGoTo_api">setGoTo()</string>
+
+
+    <!--RobotAPI.robot.speak strings-->
+    <string name="robot_speak_example">This is a example. You can try to press the stop button to stop zenbo speaking.</string>
+    <string name="robot_setExpression_candidate_select">Please select a expression :</string>
+
+
+
+
+
+
+
+
+
+    <!-- ============================================================================ -->
+    <!-- utility subclass -->
+    <!-- ============================================================================ -->
+    <!-- RobotAPI.utility listView adapter -->
+    <string-array name="subclasses_utility">
+        <item>@string/utility_playAction_less</item>
+        <item>@string/utility_playEmotionalAction_less</item>
+    </string-array>
+
+
+
+    <!--RobotAPI.utility api strings-->
+    <string name="utility_playAction_full">RobotAPI. utility. playAction</string>
+    <string name="utility_playAction_less">playAction</string>
+    <string name="utility_playAction_api">playAction(int number)</string>
+    <string name="utility_playEmotionalAction_full">RobotAPI. utility. playEmotionalAction</string>
+    <string name="utility_playEmotionalAction_less">playEmotionalAction</string>
+    <string name="utility_playEmotionalAction_api">playEmotionalAction(java.util.List<![CDATA[<RobotUtil.faceItem>]]> faceList, int playAction)</string>
+
+
+
+    <!-- RobotAPI.utility.playAction ui strings -->
+    <string name="utility_playAction_text_id">Please enter action #ID:</string>
+
+    <!-- RobotAPI.utility.playEmotionalAction ui strings -->
+    <string name="utility_playEmotionalAction_text_id">Please slect demo example :</string>
+
+
+
+
+
+
+
+
+
+
+    <!-- ============================================================================ -->
+    <!-- vision subclass -->
+    <!-- ============================================================================ -->
+    <!-- RobotAPI.vision listView adapter -->
+    <string-array name="subclasses_vision">
+        <item>@string/vision_detectPersion_and_cancel</item>
+    </string-array>
+
+    <!-- string for adapter only -->
+    <string name="vision_detectPersion_and_cancel">requestDetectPerson <![CDATA[&]]> cancelDetectPerson</string>
+
+    <!--RobotAPI.vision api strings-->
+    <string name="vision_requestDetectPerson_full">RobotAPI. vision. requestDetectPerson</string>
+    <string name="vision_requestDetectPerson_less">requestDetectPerson</string>
+    <string name="vision_requestDetectPerson_api">requestDetectPerson( float interval )</string>
+    <string name="vision_cancelDetectPerson_full">RobotAPI. vision. cancelDetectPerson</string>
+    <string name="vision_cancelDetectPerson_less">cancelDetectPerson</string>
+    <string name="vision_cancelDetectPerson_api">cancelDetectPerson()</string>
+
+
+
+    <!-- vision temp -->
+    <string name="Detect_Person">Detect Person</string>
+    <string name="Cancel_Detect_Person">Cancel Detect Person</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ============================================================================ -->
+    <!-- wheellights subclass -->
+    <!-- ============================================================================ -->
+    <!-- RobotAPI.wheelLights listView adapter -->
+    <string-array name="subclasses_wheel">
+        <item>@string/wheelLights_setBrightness_less</item>
+        <item>@string/wheelLights_setColor_less</item>
+        <item>@string/wheelLights_startBlinking_less</item>
+        <item>@string/wheelLights_startBreathing_less</item>
+        <item>@string/wheelLights_startCharging_less</item>
+        <item>@string/wheelLights_startMarquee_less</item>
+        <item>@string/wheelLights_turnoff_less</item>
+    </string-array>
+
+
+    <!--wheelLights api strings-->
+    <string name="wheelLights_setBrightness_full">RobotAPI. wheelLights. setBrightness</string>
+    <string name="wheelLights_setBrightness_less">setBrightness</string>
+    <string name="wheelLights_setBrightness_api">setBrightness( WheelLights.Lights id, int active, int bright )</string>
+    <string name="wheelLights_setColor_full">RobotAPI. wheelLights. setColor</string>
+    <string name="wheelLights_setColor_less">setColor</string>
+    <string name="wheelLights_setColor_api">setColor( WheelLights.Lights id, int active, int color )</string>
+    <string name="wheelLights_startBlinking_full">RobotAPI. wheelLights. startBlinking</string>
+    <string name="wheelLights_startBlinking_less">startBlinking</string>
+    <string name="wheelLights_startBlinking_api">startBlinking( WheelLights.Lights id, int active, int brightTime, int darkTime, int cycleNumber )</string>
+    <string name="wheelLights_startBreathing_full">RobotAPI. wheelLights. startBreathing</string>
+    <string name="wheelLights_startBreathing_less">startBreathing</string>
+    <string name="wheelLights_startBreathing_api">startBreathing( WheelLights.Lights id, int active, int darkToBrightTime, int brightToDarkTime, int cycleNumber )</string>
+    <string name="wheelLights_startCharging_full">RobotAPI. wheelLights. startCharging</string>
+    <string name="wheelLights_startCharging_less">startCharging</string>
+    <string name="wheelLights_startCharging_api">startCharging( WheelLights.Lights id, int type, int batteryLevel, WheelLights.Direction direction, int speed )</string>
+    <string name="wheelLights_startMarquee_full">RobotAPI. wheelLights. startMarquee</string>
+    <string name="wheelLights_startMarquee_less">startMarquee</string>
+    <string name="wheelLights_startMarquee_api">startMarquee( WheelLights.Lights id, WheelLights.Direction direction, int colorShiftTime, int brightTime, int cycleNumber )</string>
+    <string name="wheelLights_turnoff_full">RobotAPI. wheelLights. turnoff</string>
+    <string name="wheelLights_turnoff_less">turnoff</string>
+    <string name="wheelLights_turnoff_api">turnOff( WheelLights.Lights id, int active )</string>
+
+
+</resources>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textview_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#F5DC49"
+        android:paddingTop="25dp"
+        android:paddingBottom="25dp"
+        />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:layout_below="@+id/textview_title"
+        >
+
+        <!-- ========MoveBody======== -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/motion_moveBody_api"
+            android:id="@+id/textview_moveBody" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/motion_moveBody_less"
+                    android:id="@+id/moveButton"
+                    android:layout_column="0" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:ems="6"
+                    android:id="@+id/motion_moveBody_X"
+                    android:layout_column="1" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:ems="6"
+                    android:id="@+id/motion_moveBody_Y"
+                    android:layout_column="2" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:ems="6"
+                    android:id="@+id/motion_moveTheta"
+                    android:layout_column="3" />
+            </TableRow>
+        </TableLayout>
+
+
+
+        <!-- ========MoveBody Level======== -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/motion_moveBody_level_api"
+            android:id="@+id/textView_moveBody_level" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/motion_moveBody_level_less"
+                    android:id="@+id/btn_motion_moveBody_speedlevel"
+                    android:layout_column="0" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:ems="6"
+                    android:layout_column="1"
+                    android:id="@+id/editText_motion_moveBody_level_x" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:ems="6"
+                    android:id="@+id/editText_motion_moveBody_level_Y"
+                    android:layout_column="2" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:ems="6"
+                    android:id="@+id/editText_motion_moveBody_level_theta"
+                    android:layout_column="3" />
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinner_motion_moveSpeedLevel"
+                    android:layout_column="4"/>
+            </TableRow>
+        </TableLayout>
+
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="30dp"/>
+
+
+
+        <!-- ========MoveHead======== -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/motion_moveHead_api"
+            android:id="@+id/textview_moveHead" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/motion_moveHead_less"
+                android:id="@+id/btn_moveHead"
+                android:layout_column="0"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned|numberDecimal"
+                android:ems="6"
+                android:id="@+id/editText_motion_headYaw"
+                android:labelFor="@id/editText_motion_headYaw"
+                android:layout_column="1"
+                />
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned|numberDecimal"
+                android:ems="6"
+                android:id="@+id/editText_motion_headPitch"
+                android:layout_column="2"
+                />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_motion_moveHead_speedlevel"
+                android:layout_column="3"
+                />
+        </TableRow>
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="30dp"/>
+
+
+
+        <!-- ========StopMove======== -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/motion_stopMoving_full"
+            android:id="@+id/textview_stopmove" />
+
+        <Button
+            android:text="@string/motion_stopMoving_less"
+            android:id="@+id/stopButton"
+            android:layout_column="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="30dp"/>
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

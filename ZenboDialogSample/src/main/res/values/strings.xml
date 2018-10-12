@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ZenboDialogSample</string>
+
+    <string name="dialog_example">You can reply:\n
+                                    * Hello Black City\n
+                                    * Hello White City\n
+    </string>
+</resources>

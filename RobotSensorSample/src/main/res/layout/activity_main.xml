@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"
+                android:orientation="vertical">
+
+
+                <include
+                    android:id="@+id/layout_sensor_capacity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    layout="@layout/layout_type_capacity_touch"
+                    />
+
+
+                <include android:id="@+id/layout_sensor_drop_laser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    layout="@layout/layout_type_drop_laser"
+                    />
+
+                <include android:id="@+id/layout_sensor_sonar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    layout="@layout/layout_type_sonar"
+                    />
+
+                <include android:id="@+id/layout_odometry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    layout="@layout/layout_type_odometry"
+                    />
+
+                <include android:id="@+id/layout_sensor_neck_encoder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    layout="@layout/layout_type_neck_encoder"
+                    />
+
+                <include android:id="@+id/layout_wheel_encoder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    layout="@layout/layout_type_wheel_encoder"
+                    />
+
+                <include android:id="@+id/layout_robot_body_accelerometer_raw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    layout="@layout/layout_robot_body_accelerometer_raw"
+                    />
+
+                <include android:id="@+id/layout_robot_body_gyroscope_raw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    layout="@layout/layout_robot_body_gyroscope_raw"
+                    />
+
+                <include android:id="@+id/layout_robot_motor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    layout="@layout/layout_robot_motor"
+                    />
+
+                <include android:id="@+id/layout_robot_dock_ir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    layout="@layout/layout_robot_dock_ir"
+                    />
+
+                <include android:id="@+id/layout_robot_neck_trajectory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    layout="@layout/layout_robot_neck_trajectory"
+                    />
+
+                <include android:id="@+id/layout_robot_wheel_trajectory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    layout="@layout/layout_robot_wheel_trajectory"
+                    />
+
+
+            </LinearLayout>
+    </ScrollView>
+</LinearLayout>

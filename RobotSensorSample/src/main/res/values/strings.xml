@@ -1,0 +1,210 @@
+<resources>
+    <string name="app_name">RobotSensorSample</string>
+
+    <!-- TYPE_CAPACITY_TOUCH_TITLE -->
+    <string name="sensor_type_capacity_touch_title">TYPE_CAPACITY_TOUCH</string>
+
+    <string name="sensor_type_capacity_touch_value0_text"><![CDATA[value 0: Note : static_cast<int>. \nKey status (1: shortest, 2: short, 3: medium, 4: long):]]></string>
+    <string name="sensor_type_capacity_touch_value0_value">N/A</string>
+
+    <string name="sensor_type_capacity_touch_value1_text">value 1: Pressed duration (s):</string>
+    <string name="sensor_type_capacity_touch_value1_value">N/A</string>
+
+
+    <!-- TYPE_DROP_LASER -->
+    <string name="sensor_type_drop_laser_title">TYPE_DROP_LASER</string>
+
+    <string name="sensor_type_drop_laser_value0_text">value 0: Drop Laser info fifth (m):</string>
+    <string name="sensor_type_drop_laser_value0_value">N/A</string>
+
+    <string name="sensor_type_drop_laser_value1_text">value 1: Drop Laser info fourth (m):</string>
+    <string name="sensor_type_drop_laser_value1_value">N/A</string>
+
+    <string name="sensor_type_drop_laser_value2_text">value 2: Drop Laser info third (m):</string>
+    <string name="sensor_type_drop_laser_value2_value">N/A</string>
+
+    <string name="sensor_type_drop_laser_value3_text">value 3: Drop Laser info second (m):</string>
+    <string name="sensor_type_drop_laser_value3_value">N/A</string>
+
+    <string name="sensor_type_drop_laser_value4_text">value 4: Drop Laser info first (m):</string>
+    <string name="sensor_type_drop_laser_value4_value">N/A</string>
+
+    <string name="sensor_type_drop_laser_value5_text">value 5: Drop Laser rate fifth (mcps):</string>
+    <string name="sensor_type_drop_laser_value5_value">N/A</string>
+
+    <string name="sensor_type_drop_laser_value6_text">value 6: Drop Laser rate fourth (mcps):</string>
+    <string name="sensor_type_drop_laser_value6_value">N/A</string>
+
+    <string name="sensor_type_drop_laser_value7_text">value 7: Drop Laser rate third (mcps):</string>
+    <string name="sensor_type_drop_laser_value7_value">N/A</string>
+
+    <string name="sensor_type_drop_laser_value8_text">value 8: Drop Laser rate second (mcps):</string>
+    <string name="sensor_type_drop_laser_value8_value">N/A</string>
+
+    <string name="sensor_type_drop_laser_value9_text">value 9: Drop Laser rate first (mcps):</string>
+    <string name="sensor_type_drop_laser_value9_value">N/A</string>
+
+
+    <!-- TYPE_SONAR -->
+    <string name="sensor_type_sonar_title">TYPE_SONAR</string>
+
+    <string name="sensor_type_sonar_value0_text">value 0: Sonar right (m):</string>
+    <string name="sensor_type_sonar_value0_value">N/A</string>
+
+    <string name="sensor_type_sonar_value1_text">value 1: Sonar left (m):</string>
+    <string name="sensor_type_sonar_value1_value">N/A</string>
+
+    <string name="sensor_type_sonar_value2_text">value 2: Sonar back (m):</string>
+    <string name="sensor_type_sonar_value2_value">N/A</string>
+
+    <string name="sensor_type_sonar_value3_text">value 3: Sonar front right (m):</string>
+    <string name="sensor_type_sonar_value3_value">N/A</string>
+
+    <string name="sensor_type_sonar_value4_text">value 4: Sonar front left (m):</string>
+    <string name="sensor_type_sonar_value4_value">N/A</string>
+
+    <string name="sensor_type_sonar_value5_text">value 5: Sonar front center (m):</string>
+    <string name="sensor_type_sonar_value5_value">N/A</string>
+
+
+    <!-- TYPE_ODOMETRY-->
+    <string name="sensor_type_odometry_title">TYPE_ODOMETRY</string>
+
+    <string name="sensor_type_odometry_value0_text">value 0: The current position of the base in task space in x axis (m):</string>
+    <string name="sensor_type_odometry_value0_value">N/A</string>
+
+    <string name="sensor_type_odometry_value1_text">value 1: The current position of the base in task space in y axis (m):</string>
+    <string name="sensor_type_odometry_value1_value">N/A</string>
+
+    <string name="sensor_type_odometry_value2_text">value 2: The current heading direction of the base in task space (Radian):</string>
+    <string name="sensor_type_odometry_value2_value">N/A</string>
+
+
+    <!-- TYPE_NECK_ENCODER -->
+    <string name="sensor_type_neck_encoder_title">TYPE_NECK_ENCODER</string>
+
+    <string name="sensor_type_neck_encoder_value0_text">value 0: Neck motor yaw position (Radian):</string>
+    <string name="sensor_type_neck_encoder_value0_value">N/A</string>
+
+    <string name="sensor_type_neck_encoder_value1_text">value 1: Neck motor pitch position (Radian):</string>
+    <string name="sensor_type_neck_encoder_value1_value">N/A</string>
+
+    <string name="sensor_type_neck_encoder_value2_text"><![CDATA[value 2: Note : static_cast<int>. Neck status (As the following). \nBit 0 : Busy Yaw. \nBit 1 : Busy Pitch. \nBit 2 : Error Yaw (over stop position). \nBit 3 : Error Pitch (over stop position). \nBit 4 : Break Yaw. \nBit 5 : Break Pitch. \nBit 6 : Driver Yaw. \nBit 7 : Driver Pitch ]]></string>
+    <string name="sensor_type_neck_encoder_value2_value">N/A</string>
+
+
+    <!-- TYPE_WHEEL_ENCODER -->
+    <string name="sensor_type_wheel_encoder_title">TYPE_WHEEL_ENCODER</string>
+
+    <string name="sensor_type_wheel_encoder_value0_text">value 0: Left wheel encoder (Radian):</string>
+    <string name="sensor_type_wheel_encoder_value0_value">N/A</string>
+
+    <string name="sensor_type_wheel_encoder_value1_text">value 1: Right wheel encoder (Radian):</string>
+    <string name="sensor_type_wheel_encoder_value1_value">N/A</string>
+
+
+
+
+    <!-- TYPE_AVOID_TARGET -->
+    <string name="sensor_type_avoid_target_title">TYPE_AVOID_TARGET</string>
+
+    <string name="sensor_type_avoid_target_value1_text">avoid target value 1:</string>
+    <string name="sensor_type_avoid_target_value1_value">0</string>
+
+    <string name="sensor_type_avoid_target_value2_text">avoid target value 2:</string>
+    <string name="sensor_type_avoid_target_value2_value">0</string>
+
+    <string name="sensor_type_avoid_target_value3_text">avoid target value 3:</string>
+    <string name="sensor_type_avoid_target_value3_value">0</string>
+
+
+    <!-- TYPE_ROBOT_BODY_ACCELEROMETER_RAW -->
+    <string name="sensor_type_robot_body_accelerometer_raw_title">TYPE_ROBOT_BODY_ACCELEROMETER_RAW</string>
+
+    <string name="sensor_type_robot_body_accelerometer_raw_value0_text">value 0: Robot body acceleration force along the x axis(including gravity) (m/s^2):</string>
+    <string name="sensor_type_robot_body_accelerometer_raw_value0_value">N/A</string>
+
+    <string name="sensor_type_robot_body_accelerometer_raw_value1_text">value 1: Robot body acceleration force along the y axis(including gravity) (m/s^2):</string>
+    <string name="sensor_type_robot_body_accelerometer_raw_value1_value">N/A</string>
+
+    <string name="sensor_type_robot_body_accelerometer_raw_value2_text">value 2: Robot body acceleration force along the z axis(including gravity) (m/s^2):</string>
+    <string name="sensor_type_robot_body_accelerometer_raw_value2_value">N/A</string>
+
+
+
+    <!-- TYPE_ROBOT_BODY_GYROSCOPE_RAW -->
+    <string name="sensor_type_robot_body_gyroscope_raw_title">TYPE_ROBOT_BODY_GYROSCOPE_RAW</string>
+
+    <string name="sensor_type_robot_body_gyroscope_raw_value0_text">value 0: Robot body rate of rotation around the x axis (rad/s):</string>
+    <string name="sensor_type_robot_body_gyroscope_raw_value0_value">N/A</string>
+
+    <string name="sensor_type_robot_body_gyroscope_raw_value1_text">value 1: Robot body rate of rotation around the y axis (rad/s):</string>
+    <string name="sensor_type_robot_body_gyroscope_raw_value1_value">N/A</string>
+
+    <string name="sensor_type_robot_body_gyroscope_raw_value2_text">value 2: Robot body rate of rotation around the z axis (rad/s):</string>
+    <string name="sensor_type_robot_body_gyroscope_raw_value2_value">N/A</string>
+
+
+    <!-- TYPE_ROBOT_MOTOR -->
+    <string name="sensor_type_robot_motor_title">TYPE_ROBOT_MOTOR</string>
+
+    <string name="sensor_type_robot_motor_value0_text">value 0: Neck yaw current (A):</string>
+    <string name="sensor_type_robot_motor_value0_value">N/A</string>
+
+    <string name="sensor_type_robot_motor_value1_text">value 1: Neck pitch current (A):</string>
+    <string name="sensor_type_robot_motor_value1_value">N/A</string>
+
+    <string name="sensor_type_robot_motor_value2_text">value 2: Wheel left current (A):</string>
+    <string name="sensor_type_robot_motor_value2_value">N/A</string>
+
+    <string name="sensor_type_robot_motor_value3_text">value 3: Wheel right current (A):</string>
+    <string name="sensor_type_robot_motor_value3_value">N/A</string>
+
+    <string name="sensor_type_robot_motor_value4_text">value 4: Neck yaw PWM (Counts):</string>
+    <string name="sensor_type_robot_motor_value4_value">N/A</string>
+
+    <string name="sensor_type_robot_motor_value5_text">value 5: Neck pitch PWM (Counts):</string>
+    <string name="sensor_type_robot_motor_value5_value">N/A</string>
+
+    <string name="sensor_type_robot_motor_value6_text">value 6: Wheel left PWM (Counts):</string>
+    <string name="sensor_type_robot_motor_value6_value">N/A</string>
+
+    <string name="sensor_type_robot_motor_value7_text">value 7: Wheel right PWM (Counts):</string>
+    <string name="sensor_type_robot_motor_value7_value">N/A</string>
+
+
+    <!-- TYPE_ROBOT_DOCK_IR -->
+    <string name="sensor_type_robot_dock_ir_title">TYPE_ROBOT_DOCK_IR</string>
+
+    <string name="sensor_type_robot_dock_ir_value0_text">value 0: Dock IR right:</string>
+    <string name="sensor_type_robot_dock_ir_value0_value">N/A</string>
+
+    <string name="sensor_type_robot_dock_ir_value1_text">value 1: Dock IR center:</string>
+    <string name="sensor_type_robot_dock_ir_value1_value">N/A</string>
+
+    <string name="sensor_type_robot_dock_ir_value2_text">value 2: Dock IR left:</string>
+    <string name="sensor_type_robot_dock_ir_value2_value">N/A</string>
+
+
+    <!-- TYPE_ROBOT_NECK_TRAJECTORY -->
+    <string name="sensor_type_robot_neck_trajectory_title">TYPE_ROBOT_NECK_TRAJECTORY</string>
+
+    <string name="sensor_type_robot_neck_trajectory_value0_text">value 0: Robot neck yaw (Radian):</string>
+    <string name="sensor_type_robot_neck_trajectory_value0_value">N/A</string>
+
+    <string name="sensor_type_robot_neck_trajectory_value1_text">value 1: Robot neck pitch (Radian):</string>
+    <string name="sensor_type_robot_neck_trajectory_value1_value">N/A</string>
+
+
+    <!-- TYPE_ROBOT_WHEEL_TRAJECTORY -->
+    <string name="sensor_type_robot_wheel_trajectory_title">TYPE_ROBOT_WHEEL_TRAJECTORY</string>
+
+    <string name="sensor_type_robot_wheel_trajectory_value0_text">value 0: Robot wheel left (m/s):</string>
+    <string name="sensor_type_robot_wheel_trajectory_value0_value">N/A</string>
+
+    <string name="sensor_type_robot_wheel_trajectory_value1_text">value 1: Robot wheel right (m/s):</string>
+    <string name="sensor_type_robot_wheel_trajectory_value1_value">N/A</string>
+
+
+
+</resources>

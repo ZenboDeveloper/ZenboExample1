@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sensor_type_robot_wheel_trajectory_title"
+        android:textColor="#F5DC49"
+        android:paddingTop="25dp"
+        android:paddingBottom="25dp"
+        />
+
+    <TableRow
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:text="@string/sensor_type_robot_wheel_trajectory_value0_text"
+            android:id="@+id/id_sensor_type_robot_wheel_trajectory_value0_text"
+            android:layout_column="0" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="@string/sensor_type_robot_wheel_trajectory_value1_value"
+            android:id="@+id/id_sensor_type_robot_wheel_trajectory_value0_value"
+            android:layout_column="1" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:text="@string/sensor_type_robot_wheel_trajectory_value1_text"
+            android:id="@+id/id_sensor_type_robot_wheel_trajectory_value1_text"
+            android:layout_column="0" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="@string/sensor_type_robot_wheel_trajectory_value1_value"
+            android:id="@+id/id_sensor_type_robot_wheel_trajectory_value1_value"
+            android:layout_column="1" />
+    </TableRow>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        />
+</TableLayout>
