@@ -92,6 +92,12 @@ public class RobotDevSampleActivity extends com.robot.asus.robotactivity.RobotAc
         public void onStateChange(int cmd, int serial, RobotErrorCode err_code, RobotCmdState state) {
             super.onStateChange(cmd, serial, err_code, state);
         }
+
+        @Override
+        public void initComplete() {
+            super.initComplete();
+
+        }
     };
 
 

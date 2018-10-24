@@ -1,6 +1,6 @@
 <resources>
     <!-- App Name-->
-    <string name="app_name">Zenbo Dev Sample</string>
+    <string name="app_name">ZenboDevSample</string>
 
 
     <!-- Toolbar resources -->
@@ -130,10 +130,6 @@
     <string name="robot_setExpression_full">RobotAPI. robot. setExpression</string>
     <string name="robot_setExpression_less">setExpression</string>
     <string name="robot_setExpression_api">setExpression(RobotFace face)</string>
-
-    <string name="robot_setGoTo_full">RobotAPI. robot. setGoTo</string>
-    <string name="robot_setGoTo_less">setGoTo</string>
-    <string name="robot_setGoTo_api">setGoTo()</string>
 
 
     <!--RobotAPI.robot.speak strings-->

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ZenboGoToLocation</string>
+
+    <string name="app_title">ZenboGoToLocation</string>
+    <string name="permission_hint">1. Please grant permission first: </string>
+    <string name="button_grant_permission">Grant Permission</string>
+    <string name="permission_not_granted">Status: permission not granted!</string>
+    <string name="permission_granted">Status: permission is already granted! Go to next step!</string>
+
+    <string name="map_scan_hint">2. Please scan home map and edit position tags first!</string>
+    <string name="map_scan_hint_step">Go to Zenbo Setting: Home environment and space, to scan map and tag positions! </string>
+
+    <string name="get_room_info_hint">3. Get position Info</string>
+    <string name="button_get_room_info">Get 1st position Info</string>
+    <string name="get_1st_room_info_hint">Current 1st room info keyword is:</string>
+    <string name="first_room_info">No room info</string>
+
+    <string name="go_to_location">4. Press the button to let zenbo go to the position:</string>
+    <string name="button_go_to_location">Go!</string>
+</resources>

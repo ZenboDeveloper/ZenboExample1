@@ -113,6 +113,11 @@ public class UtilityPlayEmotionalAction extends RobotActivity {
                 mRobotAPI.robot.setExpression(RobotFace.HIDEFACE);
             }
 
+        }
+
+        @Override
+        public void initComplete() {
+            super.initComplete();
 
         }
     };

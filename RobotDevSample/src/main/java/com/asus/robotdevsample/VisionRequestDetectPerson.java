@@ -169,6 +169,12 @@ public class VisionRequestDetectPerson extends RobotActivity {
         public void onGesturePoint(GesturePointResult result) {
             Log.d("RobotDevSample", "onGesturePoint:" +result.toString());
         }
+
+        @Override
+        public void initComplete() {
+            super.initComplete();
+
+        }
     };
 
 

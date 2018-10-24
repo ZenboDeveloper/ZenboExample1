@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/activity_main"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.asus.zenbogotolocation.MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_title"
+        android:textColor="#F5DC49"
+        android:paddingTop="25dp"
+        android:paddingBottom="25dp"
+        />
+
+    <!-- =================================================================== -->
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linearLayout_permission"
+        android:layout_below= "@id/textView_title"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="30dp"
+        >
+        <TextView
+            android:id="@+id/textView_permission_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/permission_hint" />
+
+        <Button
+            android:id="@+id/button_requestPermission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_grant_permission"
+            android:layout_marginStart="20dp"
+            />
+
+        <TextView
+            android:id="@+id/textView_permission_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/permission_not_granted"
+            android:layout_marginStart="30dp"
+            />
+
+        <Space
+            android:id="@+id/space_permission"
+            android:layout_width="1dp"
+            android:layout_height="30dp"/>
+    </LinearLayout>
+
+    <!-- =================================================================== -->
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linearLayout_homeMap"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/linearLayout_permission"
+        android:orientation="vertical"
+        android:layout_marginStart="30dp"
+        >
+        <TextView
+            android:id="@+id/textView_home_map_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/map_scan_hint" />
+
+        <TextView
+            android:id="@+id/textView_home_map_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/map_scan_hint_step"
+            android:layout_marginStart="30dp"
+            />
+
+        <Space
+            android:id="@+id/space_home_map"
+            android:layout_width="1dp"
+            android:layout_height="30dp"/>
+    </LinearLayout>
+
+    <!-- ================================================================== -->
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linearLayout_roomInfo"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/linearLayout_homeMap"
+        android:orientation="vertical"
+        android:layout_marginStart="30dp"
+        >
+
+        <TextView
+            android:id="@+id/textView_getRoomInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/get_room_info_hint" />
+
+        <Button
+            android:id="@+id/button_getRoomInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_get_room_info"
+            android:layout_marginStart="30dp"
+            />
+
+        <TextView
+            android:id="@+id/textView_roomInfo_1st_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/get_1st_room_info_hint"
+            android:layout_marginStart="30dp"
+            />
+
+        <TextView
+            android:id="@+id/textView_roomInfo_1st_keyword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#F5DC49"
+            android:text="@string/first_room_info"
+            android:layout_marginStart="30dp"
+            />
+
+        <Space
+            android:id="@+id/space_roomInfo"
+            android:layout_width="1dp"
+            android:layout_height="30dp"/>
+    </LinearLayout>
+
+    <!-- ================================================================== -->
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linearLayout_goTo"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/linearLayout_roomInfo"
+        android:orientation="vertical"
+        android:layout_marginStart="30dp"
+        >
+        <TextView
+            android:id="@+id/textView_roomInfo_1st_goTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/go_to_location" />
+
+        <Button
+            android:id="@+id/button_goTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_go_to_location"
+            android:layout_marginStart="30dp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

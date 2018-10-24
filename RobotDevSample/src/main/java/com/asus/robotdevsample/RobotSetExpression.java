@@ -1,11 +1,7 @@
 package com.asus.robotdevsample;
 
-import android.Manifest;
-import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.support.annotation.NonNull;
-import android.support.v4.app.ActivityCompat;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
@@ -13,23 +9,17 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.asus.robotframework.API.RobotCallback;
 import com.asus.robotframework.API.RobotCmdState;
 import com.asus.robotframework.API.RobotCommand;
 import com.asus.robotframework.API.RobotErrorCode;
 import com.asus.robotframework.API.RobotFace;
-import com.asus.robotframework.API.results.RoomInfo;
 import com.robot.asus.robotactivity.RobotActivity;
-
 
 import org.json.JSONObject;
 
-public class RobotSetExpression extends RobotActivity implements ActivityCompat.OnRequestPermissionsResultCallback{
-
-    private static final int MY_PERMISSIONS_REQUEST_READ_CONTACTS = 1;
-
+public class RobotSetExpression extends RobotActivity {
     private Spinner mSpinner;
     private ArrayAdapter<String> SpinnerList;
     private String[] FaceCandidateArray = {"INTERESTED", "DOUBTING", "PROUD", "DEFAULT", "HAPPY", "EXPECTING", "SHOCKED", "QUESTIONING", "IMPATIENT", "ACTIVE",
@@ -37,7 +27,6 @@ public class RobotSetExpression extends RobotActivity implements ActivityCompat.
                                             "SINGING", "AWARE_LEFT", "DEFAULT_STILL", "HIDEFACE"};
 
     private Button btn_start;
-    private Button btn_doGoTo;
     private CountDownTimer mCountDownTimer;
 
     @Override
@@ -71,49 +60,8 @@ public class RobotSetExpression extends RobotActivity implements ActivityCompat.
 
         };
 
-        requestReadContactsPermission();
-
-        btn_doGoTo = (Button) findViewById(R.id.btn_setGoTo);
-        btn_doGoTo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
-
-                Toast toast;
-                int intCmdID;
-                try{
-                    java.util.ArrayList<RoomInfo> dataRooms = robotAPI.contacts.room.getAllRoomInfo();
-                    if(dataRooms.size()>0){
-                        for(int i=0;i<dataRooms.size();i++){
-                            toast = Toast.makeText(RobotSetExpression.this,
-                                    "地點數量"+dataRooms.size(), Toast.LENGTH_LONG);
-                            //顯示Toast
-                            toast.show();
-
-                            intCmdID=robotAPI.motion.goTo("房間");
-                            toast = Toast.makeText(RobotSetExpression.this,
-                                    "Goto button " + intCmdID, Toast.LENGTH_LONG);
-                            //顯示Toast
-                            toast.show();
-                        }
-                    }else{
-                        toast = Toast.makeText(RobotSetExpression.this,
-                                "尚未建置地圖，請先建置地圖", Toast.LENGTH_LONG);
-                        //顯示Toast
-                        toast.show();
-                    }
-
-                }catch (Exception e){
-
-                    toast = Toast.makeText(RobotSetExpression.this,
-                            "Error" + e.toString(), Toast.LENGTH_LONG);
-                    //顯示Toast
-                    toast.show();
-                }
-            }
-        });
 
         btn_start = (Button) findViewById(R.id.btn_setExpression);
-
         btn_start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
@@ -248,6 +196,12 @@ public class RobotSetExpression extends RobotActivity implements ActivityCompat.
         public void onStateChange(int cmd, int serial, RobotErrorCode err_code, RobotCmdState state) {
             super.onStateChange(cmd, serial, err_code, state);
         }
+
+        @Override
+        public void initComplete() {
+            super.initComplete();
+
+        }
     };
 
 
@@ -286,28 +240,5 @@ public class RobotSetExpression extends RobotActivity implements ActivityCompat.
 
     public RobotSetExpression() {
         super(robotCallback, robotListenCallback);
-    }
-
-    private void requestReadContactsPermission() {
-        if (shouldShowRequestPermissionRationale(Manifest.permission.READ_CONTACTS)) {
-            // new ConfirmationDialog().show(getChildFragmentManager(), FRAGMENT_DIALOG);
-        } else {
-            requestPermissions(new String[]{Manifest.permission.READ_CONTACTS}, MY_PERMISSIONS_REQUEST_READ_CONTACTS);
-        }
-    }
-
-    @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions,
-                                           @NonNull int[] grantResults) {
-        if (requestCode == MY_PERMISSIONS_REQUEST_READ_CONTACTS) {
-            if (grantResults.length != 1 || grantResults[0] != PackageManager.PERMISSION_GRANTED) {
-                /*
-                ErrorDialog.newInstance(getString(R.string.request_permission))
-                        .show(getChildFragmentManager(), FRAGMENT_DIALOG);
-                                */
-            }
-        } else {
-            super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        }
     }
 }
